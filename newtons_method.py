@@ -21,13 +21,13 @@ def power(x, n):
         product, k = product * x, k + 1
     return product
 
-def close(x, y, tolerance = 1e-15):
+def close(x, y, tolerance = 1e-16):
     """Compares absolute value of x - y and tolerance, returns bool.
     
     >>> close(2 * 2, 52)
     False
     """
-    assert(tolerance >= 1e-15), 'tolerance must be at least 1e-15'
+    assert(tolerance <= 1e-15), 'tolerance must be at least 1e-15'
     return abs(x - y) < tolerance
 
 def calc(approx, close, guess = 1, max_approxs = 100):
