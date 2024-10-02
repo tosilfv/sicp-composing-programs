@@ -2,7 +2,8 @@
 from doctest import run_docstring_examples
 
 def split(m):
-    return m // 10, m % 10
+    """Splits m to two parts, all but the last digit and the last digit."""
+    return m // 10, m % 10 # 2024: 202, 4
 
 def sum_digits(n):
     """Sums digits of number n together, returns int or float.
