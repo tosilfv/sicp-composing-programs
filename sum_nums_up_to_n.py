@@ -1,7 +1,11 @@
 from doctest import run_docstring_examples
 
 def sum_nums_up_to_n(n, term):
-    """ Sums positive integers according to term up to n.
+    """ Sums positive integers according to term up to n
+    e.g. sum_nums_up_to_n(2, square): 1 * 1 + 2 * 2 = 5,
+    or
+    e.g. sum_nums_up_to_n(2, cube): 1 * 1 + 2 * 2 * 2 = 9,
+    returns int or float.
 
     >>> sum_nums_up_to_n(2, square)
     5
@@ -35,8 +39,8 @@ sum_of_squares = calculate_squares(100)
 sum_of_cubes = calculate_cubes(100)
 sum_of_pi = calculate_pi(1e6) # values above 1e6 compute SLOWLY!
 
-print(f"\n\nsum_of_squares: {sum_of_squares} \n\n")
-print(f"\n\nsum_of_cubes: {sum_of_cubes} \n\n")
-print(f"\n\nsum_of_pi: {sum_of_pi} \n\n")
+print(f"sum_of_squares: {sum_of_squares}")
+print(f"sum_of_cubes: {sum_of_cubes}")
+print(f"sum_of_pi: {sum_of_pi}")
 
 run_docstring_examples(sum_nums_up_to_n, globals(), True)
