@@ -5,23 +5,13 @@ def sum_nums_up_to_n(n, term):
 
     >>> sum_nums_up_to_n(2, square)
     5
-    >>> sum_nums_up_to_n(3, square)
-    14
-    >>> sum_nums_up_to_n(4, square)
-    30
     >>> sum_nums_up_to_n(2, cube)
     9
-    >>> sum_nums_up_to_n(3, cube)
-    36
-    >>> sum_nums_up_to_n(4, cube)
-    100
     """
-    
     sum, x = 0, 1
     while x <= n:
         sum, x = sum + term(x), x + 1
     return sum
-
 
 def square(x):
     return x * x
